@@ -1,0 +1,314 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 1000px;
+    margin: auto;
+    font-family: 'Roboto Slab', serif;
+}
+ul{
+    list-style: none;
+}
+a{
+   text-decoration: none; 
+    font-size: 16px;
+}
+/* BARRE DE NAVIGATION */
+nav{
+    padding:20px 0 20px 0;
+    font-family: Arial, Helvetica, sans-serif; 
+    width: 100%;
+    height: 18px;
+    position: fixed;
+    top: 0;
+    background: #3b2e1b;
+    z-index: 20;
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+    margin:0 auto;
+    width: 900px; 
+}
+ul a{
+    margin-left: 40px;
+    color: #f0d4aa;
+}
+nav ul li:first-child a{
+     margin-left: 0;
+}
+nav ul li a{
+    transition: 0.5s;
+}
+nav ul:hover li{
+    opacity: 0.2;
+    filter: blur(1px);
+}
+nav ul li:hover{
+    opacity: 1;
+    filter: blur(0);
+}
+nav ul li:hover a{
+    font-size: 20px;
+}
+input{
+    background-color: #faedd8;
+}
+textarea {
+    background-color: #faedd8;
+}
+label{
+    color: #523f23;
+}
+/* SECTION ACCUEIL */
+#accueil .container{
+    padding: 100px 0 100px 0;
+    display: flex;
+    justify-content: space-between;
+}
+#accueil{
+    background: #f0d4aa;
+}
+#accueil .image img{
+    width: 50%;
+    filter: grayscale(100%);
+}
+#accueil .image img:hover{
+     filter: none;
+}
+#accueil .image {
+  border: 1px solid #f0d4aa;
+  border-radius: 4px;
+  padding: 7px;
+  width: 450%;
+  margin-top: 80px;
+  margin-left: 120px;
+}
+#accueil .image h1{
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 600;
+    font-size: 80px;
+    margin-bottom: 10px;
+    color: #534126;
+}
+#accueil .image p{
+    font-size: 33px;
+    margin-bottom: 10px;
+    color: #808181;
+    text-align: center;
+}
+#accueil .text{
+    padding-top: 50px;
+}
+#accueil .text h1{
+    color: #534126;
+    font-weight: 600;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+#accueil .text ul{
+    font-weight: 400;
+}
+#accueil .text ul li{
+    font-size: 20px;
+    color: #8d6d3e;
+    margin-bottom: 15px;
+}
+#accueil .text ul span{
+    font-size: 28px;
+    color: #534126;
+    display: inline-block;
+    min-width: 180px;
+}
+#accroche{
+    font-size: 17px;
+    text-align: justify;
+    color: #a08050;
+}
+/* FORMATION - EXPÉRIENCES */
+#formation .container,#experiences .container{
+    padding-top: 50px;
+}
+#formation, section{
+    background-color: #fff6e8;
+    padding-top: 20px;
+}
+#formation, #experiences{
+    margin-bottom: 0px;
+    padding-bottom: 70px;
+} 
+#experiences, section{
+    background-color: #faedd8;
+}
+#formation ul,#experiences ul{
+    border-left: 2px solid #c09b64;
+    margin-left: 60px;
+}
+ .title h2{
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 35px;
+    color: #534126;
+    margin-bottom: 50px;
+}
+#formation li,#experiences li{
+    padding-left: 50px;
+    position: relative;
+}
+#formation .rond,#experiences .rond{
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border: 2px solid #c09b64;
+    border-radius: 50px;
+    background: #f0d4aa;
+    top: 50px;
+    left: -10px;
+}
+#formation li h2,#experiences li h2{
+    font-size: 30px;
+    padding-top: 40px;
+    margin-bottom: 10px;
+    color: #534126;
+}
+#formation li h3,#experiences li h3{
+    font-size: 30px;
+    color: #755c36;
+    margin-bottom: 5px;
+    font-weight: 600;
+    font-family: 'Josefin Sans', sans-serif;
+}
+#formation li h4,#experiences li h4{
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #e9bc78;
+    margin-top: 10px;
+    margin-bottom: 45px;
+    font-weight: 600;
+    font-family: 'Josefin Sans', sans-serif;
+}
+#formation p,#experiences p{
+    font-size: 18px;
+    color: #c09b64;
+    line-height: 1.8;
+}
+/* SECTION COMPÉTENCES */
+#competences{
+    background: #f0d4aa;
+}
+#competences .container .skill li{
+    font-size: 24px;
+    color: #534126;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+}
+#competences .jauges li{
+    height: 30px;
+    width: 30px;
+    border: 2px solid #9b7844;
+    border-radius: 50px;
+    background: #c7a982;
+    margin-right: 30px;
+}
+#competences .jauges{
+    display: flex;
+    justify-content: center;
+}
+#competences .container .skill li p{
+   min-width: 200px;
+   margin-right: 200px;
+}
+#competences .container{
+    padding: 50px 0;
+}
+#competences .container .skill {
+    padding-top: 50px;
+}
+/* SECTION FORMULAIRE DE CONTACT */
+#contact{
+    background: #f0d4aa;
+    padding: 50px 0;
+}
+input[type=text], textarea {
+  width: 100%;
+  padding: 12px; 
+  border: 1px solid #cea96d;
+  border-radius: 4px; 
+  margin-top: 6px;
+  margin-bottom: 16px; 
+}
+input[type=submit] {
+  font-size: 20px;
+  display: block;
+  color: #3b2e1b;
+  background: #f0d4aa;
+  padding: 12px 20px;
+  border: 1px solid #816c49;
+  border-radius: 4px;
+  width: 150px;
+  height: 50px;
+  cursor: pointer;
+  text-align: center;
+  margin: 0 auto;
+  transition: all 1s;
+}
+input[type=submit]:hover{
+    background: #755c36;
+    border: none;
+    color: #f0d4aa;
+}
+/* SECTION FOOTER */
+footer{
+    background: #3b2e1b;
+    padding: 50px 0 ;
+}
+footer .fa-chevron-up{
+    text-align: center;
+    display: block;
+    font-size: 25px;
+    color: #f0d4aa; 
+    height: 30px;
+}
+footer .fa-chevron-up:hover{
+    font-size: 30px;
+}
+footer p{
+    text-align: center;
+    color: #f0d4aa;
+    font-weight: normal;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
